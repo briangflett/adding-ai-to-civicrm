@@ -1,14 +1,14 @@
-{#- Page comments via giscus (GitHub Discussions). Fill in the four
-    data-* values from https://giscus.app once the repo exists with
-    Discussions enabled. Until then nothing renders. -#}
-{% set giscus_repo_id = "" %}
-{% set giscus_category_id = "" %}
+{#- Page comments via giscus (GitHub Discussions, "Announcements" category:
+    only giscus opens a thread per page; anyone can reply). IDs from giscus.app.
+    Set comments: false in a page's front matter to hide them there. -#}
+{% set giscus_repo_id = "R_kgDOVCpqfw" %}
+{% set giscus_category_id = "DIC_kwDOVCpqf84DHbFI" %}
 {% if giscus_repo_id and not page.meta.comments == false %}
   <h2 id="__comments">Comments</h2>
   <script src="https://giscus.app/client.js"
           data-repo="briangflett/ai-native-civicrm"
           data-repo-id="{{ giscus_repo_id }}"
-          data-category="Comments"
+          data-category="Announcements"
           data-category-id="{{ giscus_category_id }}"
           data-mapping="pathname"
           data-strict="1"
