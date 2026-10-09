@@ -13,14 +13,13 @@ theme:
     logo: material/hub-outline
     repo: material/pencil-outline
   features:
-    - navigation.tabs
+    - navigation.sections
     - navigation.instant
     - navigation.footer
     - navigation.top
-    - navigation.indexes
     - search.suggest
     - content.action.edit
-    - toc.follow
+    - toc.integrate
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default

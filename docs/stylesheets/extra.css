@@ -5,3 +5,25 @@
 .mermaid .node.clickable:hover path { filter: brightness(0.92); }
 /* A little breathing room for the landing lead */
 .md-typeset .lead { font-size: 1.15em; line-height: 1.5; }
+
+/* One sidebar for everything: group headings small and quiet, current page obvious */
+.md-nav--primary .md-nav__item--section > .md-nav__link {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.62rem;
+  color: var(--md-default-fg-color--light);
+  margin-top: 1.1em;
+}
+.md-nav--primary .md-nav__link--active {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+  border-left: 3px solid var(--md-primary-fg-color);
+  padding-left: 0.5em;
+  margin-left: -0.6em;
+}
+/* In-page sections nested under the current page */
+.md-nav--primary .md-nav--secondary .md-nav__link {
+  font-size: 0.66rem;
+  color: var(--md-default-fg-color--light);
+}
+.md-nav--primary .md-nav--secondary .md-nav__link:hover { color: var(--md-accent-fg-color); }

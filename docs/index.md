@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # Adding AI to CiviCRM
 
 <p class="lead"><strong>How CiviCRM can add AI capabilities safely and sustainably, building on what WordPress and Drupal have already learned.</strong></p>
