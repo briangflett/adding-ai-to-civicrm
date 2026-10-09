@@ -1,0 +1,7 @@
+/* Make clickable diagram boxes look clickable */
+.mermaid .node.clickable { cursor: pointer; }
+.mermaid .node.clickable:hover rect,
+.mermaid .node.clickable:hover polygon,
+.mermaid .node.clickable:hover path { filter: brightness(0.92); }
+/* A little breathing room for the landing lead */
+.md-typeset .lead { font-size: 1.15em; line-height: 1.5; }

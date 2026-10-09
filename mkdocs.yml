@@ -1,0 +1,77 @@
+site_name: Adding AI to CiviCRM
+site_description: A discussion draft on adding AI capabilities to CiviCRM, building on what WordPress and Drupal have learned
+site_url: https://briangflett.github.io/ai-native-civicrm/
+repo_url: https://github.com/briangflett/ai-native-civicrm
+repo_name: Suggest an edit
+edit_uri: edit/main/docs/
+copyright: A community discussion draft. Text licensed CC BY-SA 4.0.
+
+theme:
+  name: material
+  custom_dir: overrides
+  icon:
+    logo: material/hub-outline
+    repo: material/pencil-outline
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.footer
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - content.action.edit
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - The approach:
+      - Two ways to bring AI in: two-directions.md
+      - Lessons from WordPress and Drupal: wordpress-and-drupal.md
+      - Proposed building blocks: path-forward.md
+      - Where civicrm_mcp fits: civicrm-mcp-scope.md
+  - Capabilities:
+      - What AI could do in CiviCRM: capabilities.md
+      - Community work so far: related-work.md
+  - For organisations:
+      - Already on CiviCRM: existing-users.md
+      - Choosing a CRM: new-organisations.md
+  - Background:
+      - Principles, and why now: why.md
+      - The wider CRM landscape: landscape.md
