@@ -1,7 +1,7 @@
 site_name: Adding AI to CiviCRM
 site_description: A discussion draft on adding AI capabilities to CiviCRM, building on what WordPress and Drupal have learned
-site_url: https://briangflett.github.io/ai-native-civicrm/
-repo_url: https://github.com/briangflett/ai-native-civicrm
+site_url: https://briangflett.github.io/adding-ai-to-civicrm/
+repo_url: https://github.com/briangflett/adding-ai-to-civicrm
 repo_name: Suggest an edit
 edit_uri: edit/main/docs/
 copyright: A community discussion draft. Text licensed CC BY-SA 4.0.
