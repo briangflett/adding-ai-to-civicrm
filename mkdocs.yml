@@ -13,12 +13,7 @@ theme:
     logo: material/hub-outline
     repo: material/pencil-outline
   features:
-    - navigation.sections
-    - navigation.instant
-    - navigation.footer
-    - navigation.top
-    - search.suggest
-    - content.action.edit
+    # Match docs.civicrm.org, which publishes with toc.integrate only (a page's sections in the left menu).
     - toc.integrate
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -59,18 +54,17 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - Home: index.md
-  - The approach:
+  - About:
+      - Overview: index.md
+      - Principles, and why now: why.md
+      - What AI could do in CiviCRM: capabilities.md
+  - Organisations:
+      - Already on CiviCRM: existing-users.md
+      - Choosing a CRM: new-organisations.md
+      - The wider CRM landscape: landscape.md
+  - Builders and implementers:
       - Two ways to bring AI in: two-directions.md
       - Lessons from WordPress and Drupal: wordpress-and-drupal.md
       - Proposed building blocks: path-forward.md
       - Where civicrm_mcp fits: civicrm-mcp-scope.md
-  - Capabilities:
-      - What AI could do in CiviCRM: capabilities.md
       - Community work so far: related-work.md
-  - For organisations:
-      - Already on CiviCRM: existing-users.md
-      - Choosing a CRM: new-organisations.md
-  - Background:
-      - Principles, and why now: why.md
-      - The wider CRM landscape: landscape.md
