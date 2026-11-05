@@ -13,8 +13,12 @@ theme:
     logo: material/hub-outline
     repo: material/pencil-outline
   features:
-    # Match docs.civicrm.org, which publishes with toc.integrate only (a page's sections in the left menu).
+    # Match docs.civicrm.org's layout: a page's sections in the left menu.
     - toc.integrate
+    # Kept on purpose, unlike docs.civicrm.org: this is a discussion site that asks for edits,
+    # and readers often go page to page.
+    - content.action.edit
+    - navigation.footer
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -54,8 +58,9 @@ markdown_extensions:
       permalink: true
 
 nav:
+  # Top level, not inside About: only a top-level index.md counts as the home page, whose tab title is the site name alone.
+  - Overview: index.md
   - About:
-      - Overview: index.md
       - Principles, and why now: why.md
       - What AI could do in CiviCRM: capabilities.md
   - Organisations:
